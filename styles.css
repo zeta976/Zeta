@@ -345,6 +345,16 @@ transform: scale(1.10);
         padding: 0;
         width: 90%;
     }
+    .services-title{
+        font-size: 35px;
+    }
+    .aboutus h2{
+        font-size: 35px;
+    }
+    .aboutus p{
+        font-size: 18px;
+        color: #444;
+    }
 }
 
 .contact-container {
