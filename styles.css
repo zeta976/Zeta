@@ -132,7 +132,7 @@ h1 {
 
 .hero-text {
     padding-left: 130px;
-    width: 30%;
+    width: 37%;
     margin-top:80px;
 }
 
@@ -190,6 +190,7 @@ transform: scale(1.10);
 
 .service img {
     width: 80%;
+    height: auto;
     display: block;
     text-align: center;
     margin-left: auto;
@@ -203,6 +204,9 @@ transform: scale(1.10);
     font-size: 29px;
     color: #085598;
     text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service p {
@@ -242,16 +246,41 @@ transform: scale(1.10);
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
+
+@media (max-width: 1150px){
+    .services-container{
+        flex-wrap: wrap;
+        height: 1250px;
+    }
+    .service{
+        width: 34%;
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 750px) {
+    .services-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 2350px;
+    }
+    .service{
+        width: 90%;
+        max-width: 350px;
+    }
+}
 .aboutus {
     display: flex;
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .aboutus img { 
     margin-top: 95px;
     margin-left: 80px;
     width: 30%;
+    height: 30%;
     transform: rotate(-7deg);
 }
 .aboutustxt {
@@ -303,6 +332,19 @@ transform: scale(1.10);
     text-decoration: none;
     color: #fff;
     background-color: #0B477A;
+}
+
+@media (max-width: 1300px){
+    .aboutus img{
+        display: none;
+    }
+    .aboutustxt{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 90%;
+    }
 }
 
 .contact-container {
