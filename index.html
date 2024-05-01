@@ -13,11 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">
+    <meta name="keywords" content="agencia, diseño web, SEO, marketing digital, comercio electrónico">
+    <meta name="robots" content="index, follow">
+    <meta name=description content="Agencia Digital - Ofrecemos servicios de Diseño de páginas Web, Optimización SEO, Comercio Electrónico y Marketing Digital.">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="inter-semi-bold box colored">
-        <img src="logo.png" alt="logo" class="header-img">
+        <a href="index.html" style="height: 70px;"><img src="logo.png" alt="logo" class="header-img"></a>
         <nav class="main-nav">
             <ul class="sidebar">
                 <li class="nav-side-close"><a href="#" onclick=hideSideBar()>
@@ -27,15 +31,15 @@
                     <path fill="#444" d="M17 42.456 42.456 17l4.242 4.243-25.455 25.456z"/>
                     </svg>
                 </a></li>
-                <li class="main-nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                <li class="main-nav-item"><a href="#" class="nav-link">Servicios</a></li>
+                <li class="main-nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="main-nav-item"><a href="webdesign.html" class="nav-link">Servicios</a></li>
                 <li class="main-nav-item"><a href="#" class="nav-link">Nosotros</a></li>
                 <li class="main-nav-item"><a href="#" class="nav-link">Portafolio</a></li>
                 <li class="main-nav-item"><a href="#" class="nav-link">Contacto</a></li>
             </ul>
             <ul class="main-nav-container">
-                <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-link">Inicio</a></li>
-                <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-link">Servicios</a></li>
+                <li class="main-nav-item hide-on-mobile"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="main-nav-item hide-on-mobile"><a href="webdesign.html" class="nav-link">Servicios</a></li>
                 <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-link">Nosotros</a></li>
                 <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-link">Portafolio</a></li>
                 <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-cta">Contacto</a></li>
@@ -121,16 +125,6 @@
             <button type="submit" class="forum-button">¡ENVIAR MENSAJE!</button>
         </form>
     </div>
-    <script>
-        function showSideBar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex';
-        }
-        
-        function hideSideBar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none';
-        }
-    </script>
+    <script src="sidebar.js"></script>
 </body>
 </html>

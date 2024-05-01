@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
 }
+
 header {
     margin: 0;
     padding: 20px 100px 20px 100px;
@@ -18,10 +20,12 @@ header {
     align-items: center;
     box-shadow: 0 16px 27px 0px rgba(84, 154, 216, 0.253);
 }
+
 h1 {
     font-size: 45px;
     margin-bottom: 0.3em;
 }
+
 .inter-extra-bold {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -30,6 +34,7 @@ h1 {
     font-variation-settings:
       "slnt" 0;
 }
+
 .inter-semi-bold {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -38,6 +43,7 @@ h1 {
     font-variation-settings:
       "slnt" 0;
 }
+
 .inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -46,23 +52,27 @@ h1 {
     font-variation-settings:
       "slnt" 0;
 }
+
 .nav-link:link, .nav-link:visited, .nav-link:active {
     color:#333333;
     text-decoration: none;
 }
+
 .nav-link:hover {
     color: #0C74CE;
     border-bottom: 3px solid #0C74CE;
 }
+
 .main-nav-container {
     list-style-type: none;
     display: flex;
     padding: 0;
     justify-content: space-between;
 }
+
 .main-nav-item {
     font-size: 18px;
-    color: 444444;
+    color: #444444;
     margin-left: 2.7em;
 }
 
@@ -88,11 +98,13 @@ h1 {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
 .sidebar li, .sidebar a{
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .nav-cta {
     color: #fff;
     background-color: #0C74CE;
@@ -106,6 +118,7 @@ h1 {
   transition: ease-out 0.7s;
   font-size: 18px;
 }
+
 .nav-cta:hover {
     box-shadow: inset 400px 0 0 0 #07345c;
     border-radius: 30px;
@@ -167,6 +180,7 @@ h1 {
     text-align: center;
     color: #0B477A;
 }
+
 .services-container {
     display: flex;
     justify-content: space-evenly;
@@ -270,6 +284,7 @@ transform: scale(1.10);
         max-width: 350px;
     }
 }
+
 .aboutus {
     display: flex;
     justify-content: center;
@@ -283,6 +298,7 @@ transform: scale(1.10);
     height: 30%;
     transform: rotate(-7deg);
 }
+
 .aboutustxt {
     margin-top: 85px;
     margin-left: 80px;
@@ -290,11 +306,13 @@ transform: scale(1.10);
     max-width: 800px;
     padding-right: 100px;
 }
+
 .aboutus h2 {
     font-size: 45px;
     color: #1c1c1c;
     margin-bottom: 0.6em;
 }
+
 .aboutus p {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -461,7 +479,7 @@ transform: scale(1.10);
 .forum-button {
     height: 62px;
     width: 870px;
-    margin: none;
+    margin: 0px;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -485,6 +503,112 @@ transform: scale(1.10);
     border-radius: 5px;
 }
 
+.serviceshero {
+    padding-top: 70px;
+    padding-bottom: 85px;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(20deg, #bf3fff50, #00bbff50);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serviceshero h1 {
+    color: #1c1c1c;
+    width: 90%;
+    max-width: 760px;
+    font-size: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.serviceshero p{
+    color: #1c1c1c;
+    font-size: 20px;
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+}
+
+.servicessection {
+    padding: 50px 130px 85px 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicessection img {
+    width: 40%;
+    height: 40%;
+}
+
+.sectiontext {
+    margin-top: 20px;
+    width: 55%;
+}
+
+.sectiontext h2{
+    color: #1c1c1c;
+    font-size: 45px;
+    margin-bottom: 0.3em;
+}
+
+.sectiontext p {
+    color: #1c1c1c;
+    font-size: 20px;
+}
+
+.proceso {
+    background-color: #EAF2F5;
+    padding: 55px 0px 65px 0px;
+}
+
+.proceso h2 {
+    font-size: 45px;
+    color: #1c1c1c;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.3em;
+}
+
+.proceso p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gridcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 45px;
+}
+
+.gridcontainer div {
+    width: 33%;
+}
+
+.gridcontainer h3 {
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.gridcontainer p {
+    width: 85%;
+}
+
+.gridcontainer img {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
 @media(max-width: 1080px) {
     .hero{
         padding-top: 25px;
@@ -493,16 +617,16 @@ transform: scale(1.10);
         background-image: linear-gradient(20deg, #bf3fff50, #00bbff50);
     }
     .hero-text{
-        width: 90%;
-        min-width: none;    
+        width: 95%;
+        min-width: 0px;    
         padding-left: 0px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
     .hero-sub {
-        width: 85%;
-        min-width: none;
+        width: 93%;
+        min-width: 0px;
         max-width: 500px;
         text-align: center;
         margin-left: auto;
@@ -517,7 +641,7 @@ transform: scale(1.10);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 90%;
         max-width: 500px;
     }
     .hero-sub {
