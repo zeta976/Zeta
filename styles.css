@@ -533,9 +533,10 @@ transform: scale(1.10);
 }
 
 .servicessection {
-    padding: 50px 130px 85px 130px;
+    padding: 70px 130px 70px 130px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .servicessection img {
@@ -611,8 +612,9 @@ transform: scale(1.10);
 
 .clientes {
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 20px;
 }
+
 
 .clientes h2 {
     font-size: 45px;
@@ -621,7 +623,16 @@ transform: scale(1.10);
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
+}
+
+.clientescont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 35px;
 }
 
 .clientes h3{
@@ -629,7 +640,8 @@ transform: scale(1.10);
     margin-bottom: 8px;
 }
 
-.clientes p{
+.clientes p,
+.gridcontainer p{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -638,18 +650,95 @@ transform: scale(1.10);
     "wdth" 100;
     font-size: 18px;
 }
+
 .clientes ul{
     list-style: none;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 55%;
 }
+
+.clientes img {
+    width: 40%;
+    height: 40%;
+}
+
 .clientes li {
     background-image: url(check.png);
     background-repeat: no-repeat;
     background-size: 44px 44px;
     padding-left: 65px;
     margin-bottom: 30px;
+}
+
+.faqcont {
+    background-color: #EEF4F6;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqcont h2 {
+    color: #1c1c1c;
+    font-size: 45px;
+}
+
+.faq {
+    max-width: 910px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #1c1c1c;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 29px;
+    color: #1c1c1c;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+}
+
+.answer p {
+    padding-top: 10px;
+    font-size: 18px;
+    color: #1c1c1c;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 0.8s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(-45deg);
+}
+
+.faq svg {
+    transition: transform 0.25s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 @media(max-width: 1080px) {
