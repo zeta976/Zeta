@@ -722,11 +722,16 @@ transform: scale(1.10);
     animation: fade 0.8s ease-in-out;
 }
 
-.faq.active svg {
+.faq.active img {
+    height: 26px;
+    width: 26px;
     transform: rotate(-45deg);
 }
 
-.faq svg {
+.faq img {
+    height: 26px;
+    width: 26px;
+    margin-left: 20px;
     transition: transform 0.25s ease-in;
 }
 
@@ -738,6 +743,32 @@ transform: scale(1.10);
     to {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .clientes img {
+        display: none;
+    }
+    .clientescont {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .clientes ul {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 750px) {
+    .serviceshero h1 {
+        font-size: 35px;
+        width: 80%;
+    }
+    .serviceshero p {
+        font-size: 18px;
+        width: 90%;
     }
 }
 
@@ -778,6 +809,31 @@ transform: scale(1.10);
     }
     .hero-sub {
         font-size: 18px;
+    }
+    .servicessection {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .servicessection img {
+        display: none;
+        width: 0px;
+    }
+    .sectiontext {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .proceso{
+        padding-bottom: 25px;
+    }
+    .gridcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gridcontainer div {
+        width: 90%;
+        max-width: 500px;
+        margin-bottom: 50px;
     }
 }
 
@@ -823,5 +879,11 @@ transform: scale(1.10);
     }
     .forum-button{
         width: 90%;
+    }
+    .clientes h2 {
+        width: 90%;
+    }
+    .webdesign h2 {
+        font-size: 35px;
     }
 }
