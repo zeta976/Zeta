@@ -8,7 +8,29 @@ function hideSideBar(){
     sidebar.style.display = 'none';
 }
 
+const dropdownContainer = document.querySelector('.main-nav-item');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownContainer.addEventListener('mouseenter', () => {
+    dropdownMenu.style.display = 'block';
+});
+
+dropdownContainer.addEventListener('mouseleave', () => {
+    dropdownMenu.style.display = 'none';
+});
+
+function toggleDropdown(){
+    const dropdownSidebar = document.querySelector('.dropdown-sidebar');
+    if (dropdownSidebar.style.display === 'none' || dropdownSidebar.style.display === ''){
+        dropdownSidebar.style.display = 'block';
+    } else {
+        dropdownSidebar.style.display = 'none';
+    }
+}
+
+
 const faqs = document.querySelectorAll(".faq");
+
 
 faqs.forEach((faq) => {
     const answer = faq.querySelector(".answer");

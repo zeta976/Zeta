@@ -32,16 +32,32 @@
                     </svg>
                 </a></li>
                 <li class="main-nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                <li class="main-nav-item"><a href="webdesign.html" class="nav-link">Servicios</a></li>
+                <li class="main-nav-item"><a href="#" class="nav-link" onclick=toggleDropdown()>Servicios</a><img src="dropdown.png" alt="dropdown arrow"></li>
+                <li class="dropdown-sidebar">
+                    <ul>
+                        <li class="main-nav-item drop-item"><a href="webdesign.html" class="nav-link">Diseño Web</a></li>
+                        <li class="main-nav-item drop-item"><a href="webdesign.html" class="nav-link">Optimización SEO</a></li>
+                        <li class="main-nav-item drop-item"><a href="webdesign.html" class="nav-link">Marketing Digital</a></li>
+                        <li class="main-nav-item drop-item"><a href="webdesign.html" class="nav-link">E-Commerce</a></li>
+                    </ul>
+                </li>
                 <li class="main-nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-                <li class="main-nav-item"><a href="#" class="nav-link">Portafolio</a></li>
                 <li class="main-nav-item"><a href="#" class="nav-link">Contacto</a></li>
             </ul>
             <ul class="main-nav-container">
                 <li class="main-nav-item hide-on-mobile"><a href="index.html" class="nav-link">Inicio</a></li>
-                <li class="main-nav-item hide-on-mobile"><a href="webdesign.html" class="nav-link">Servicios</a></li>
+                <li class="main-nav-item hide-on-mobile" id="dropdown">
+                    <a href="#" class="nav-link">Servicios</a><img src="dropdown.png" alt="dropdown arrow">
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="webdesign.html">Diseño Web</a></li>
+                            <li><a href="#">Optimización SEO</a></li>
+                            <li><a href="#">Marketing Digital</a></li>
+                            <li><a href="#">E-Commerce</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-link">Nosotros</a></li>
-                <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-link">Portafolio</a></li>
                 <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-cta">Contacto</a></li>
                 <li class="main-nav-item menu-button" onclick=showSideBar()><a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
