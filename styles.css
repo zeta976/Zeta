@@ -56,11 +56,13 @@ h1 {
 .nav-link:link, .nav-link:visited, .nav-link:active {
     color:#333333;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-link:hover {
     color: #0C74CE;
     border-bottom: 3px solid #0C74CE;
+    cursor: pointer;
 }
 
 .main-nav-container {
