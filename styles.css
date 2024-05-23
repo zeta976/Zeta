@@ -207,6 +207,14 @@ h1 {
     align-items: center;
     padding-bottom: 90px;
 }
+
+.nosotros-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(50deg, #bf3fff50, #00bbff50);
+}
+
 .hero-sub {
     font-size: 20px;
     margin-bottom: 40px;
@@ -216,6 +224,11 @@ h1 {
     padding-left: 130px;
     width: 37%;
     margin-top:80px;
+}
+
+.nosotros-hero-text {
+    padding-left: 130px;
+    width: 670px;
 }
 
 .hero-img {
@@ -354,9 +367,10 @@ transform: scale(1.10);
     }
 }
 
-.aboutus {
+.aboutus, .nosotros-aboutus {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 100px;
 }
 
@@ -368,6 +382,14 @@ transform: scale(1.10);
     transform: rotate(-7deg);
 }
 
+.nosotros-aboutus img {
+    margin-top: 95px;
+    margin-left: 80px;
+    width: 35%;
+    height: 35%;
+}
+
+
 .aboutustxt {
     margin-top: 85px;
     margin-left: 80px;
@@ -376,13 +398,13 @@ transform: scale(1.10);
     padding-right: 100px;
 }
 
-.aboutus h2 {
+.aboutus h2, .nosotros-aboutus h2 {
     font-size: 45px;
     color: #1c1c1c;
     margin-bottom: 0.6em;
 }
 
-.aboutus p {
+.aboutus p, .nosotros-aboutus p{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -393,7 +415,7 @@ transform: scale(1.10);
     margin-bottom: 80px;
 }
 
-.aboutus a {
+.aboutus a, .nosotros-aboutus a{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -410,19 +432,23 @@ transform: scale(1.10);
 
 .aboutus a:link,
 .aboutus a:visited,
-.aboutus a:active {
+.aboutus a:active,
+.nosotros-aboutus a:link,
+.nosotros-aboutus a:visited,
+.nosotros-aboutus a:active{
     color: #1c1c1c;
     text-decoration: none;
 }
 
-.aboutus a:hover {
+.aboutus a:hover,
+.nosotros-aboutus a:hover{
     text-decoration: none;
     color: #fff;
     background-color: #0B477A;
 }
 
 @media (max-width: 1300px){
-    .aboutus img{
+    .aboutus img, .nosotros-aboutus img{
         display: none;
     }
     .aboutustxt{
@@ -435,10 +461,10 @@ transform: scale(1.10);
     .services-title{
         font-size: 35px;
     }
-    .aboutus h2{
+    .aboutus h2, .nosotros-aboutus h2{
         font-size: 35px;
     }
-    .aboutus p{
+    .aboutus p, .nosotros-aboutus p{
         font-size: 18px;
         color: #444;
     }
@@ -651,7 +677,50 @@ transform: scale(1.10);
     width: 90%;
 }
 
-.gridcontainer {
+.display-mobile {
+    display: none;
+}
+.line-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    position: relative;
+}
+
+.line-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 3px dotted #085598;
+    z-index: 0;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #EAF2F5;
+    color: #1c1c1c;
+    border-radius: 50%;
+    border: 3px solid #085598;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.last-circle {
+    background-color: #085598;
+    color: #EAF2F5;
+}
+
+.gridcontainer, .gridcontainer-nosotros{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -660,26 +729,26 @@ transform: scale(1.10);
     padding-right: 30px;
 }
 
-.gridcontainer div {
+.gridcontainer div, .gridcontainer-nosotros div{
     width: 33%;
 }
 
-.fourgrid div {
+.fourgrid div, .fourgrid-nosotros div{
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.gridcontainer h3 {
+.gridcontainer h3, .gridcontainer-nosotros h3{
     font-size: 29px;
     text-align: center;
     margin-bottom: 15px;
 }
 
-.gridcontainer p {
+.gridcontainer p, .gridcontainer-nosotros p{
     width: 85%;
 }
 
-.gridcontainer img {
+.gridcontainer img, .gridcontainer-nosotros img{
     display: block;
     text-align: center;
     margin-left: auto;
@@ -718,7 +787,7 @@ transform: scale(1.10);
 }
 
 .clientes p,
-.gridcontainer p{
+.gridcontainer p, .gridcontainer-nosotros p{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -944,7 +1013,13 @@ transform: scale(1.10);
         text-align: center;
         background-image: linear-gradient(20deg, #bf3fff50, #00bbff50);
     }
-    .hero-text{
+    .nosotros-hero {
+        display:block;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 90px;
+    }
+    .hero-text, .nosotros-hero-text{
         width: 95%;
         min-width: 0px;    
         padding-left: 0px;
@@ -986,6 +1061,61 @@ transform: scale(1.10);
     .proceso{
         padding-bottom: 25px;
     }
+    
+    .display-mobile {
+        display: inline;
+    }
+    .line-container {
+        display: none;
+    }
+
+    .proceso {
+        padding: 20px 0;
+    }
+
+    .proceso h2 {
+        font-size: 36px;
+    }
+
+    .proceso p {
+        font-size: 18px;
+    }
+
+    .gridcontainer-nosotros {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .gridcontainer-nosotros div {
+        width: 100%;
+        margin-bottom: 40px;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .gridcontainer-nosotros h3 {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 400px;
+        font-size: 24px;
+    }
+
+    .gridcontainer-nosotros p {
+        width: 90%;
+        max-width: 400px;
+        font-size: 16px;
+    }
+
+    .gridcontainer-nosotros img {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
     .gridcontainer {
         flex-direction: column;
         align-items: center;

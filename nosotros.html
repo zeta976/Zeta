@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Sitios Web Para su Negocio</title>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <meta name="keywords" content="agencia, diseño web, SEO, marketing digital, comercio electrónico">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Agencia Digital - Ofrecemos servicios de Diseño de páginas Web, Optimización SEO, Comercio Electrónico y Marketing Digital.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="inter-semi-bold box colored">
+        <a href="index.html" style="height: 70px;"><img src="logo.webp" alt="logo" class="header-img"></a>
+        <nav class="main-nav">
+            <ul class="sidebar">
+                <li class="nav-side-close"><a onclick="hideSideBar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+                    <path fill="#B8B8B8" fill-rule="evenodd" d="M46 2H18C9.163 2 2 9.163 2 18v28c0 8.837 7.163 16 16 16h28c8.837 0 16-7.163 16-16V18c0-8.837-7.163-16-16-16ZM18 0C8.059 0 0 8.059 0 18v28c0 9.941 8.059 18 18 18h28c9.941 0 18-8.059 18-18V18c0-9.941-8.059-18-18-18H18Z" clip-rule="evenodd"/>
+                    <path fill="#444" d="m21.243 17 25.456 25.456-4.243 4.242L17 21.243z"/>
+                    <path fill="#444" d="M17 42.456 42.456 17l4.242 4.243-25.455 25.456z"/>
+                    </svg>
+                </a></li>
+                <li class="main-nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="main-nav-item"><a class="nav-link" onclick="toggleDropdown()">Servicios</a><img src="dropdown.webp" alt="dropdown arrow"></li>
+                <li class="dropdown-sidebar">
+                    <ul>
+                        <li class="main-nav-item drop-item"><a href="webdesign.html" class="nav-link">Diseño Web</a></li>
+                        <li class="main-nav-item drop-item"><a href="seo.html" class="nav-link">Optimización SEO</a></li>
+                        <li class="main-nav-item drop-item"><a href="marketing.html" class="nav-link">Marketing Digital</a></li>
+                        <li class="main-nav-item drop-item"><a href="ecommerce.html" class="nav-link">E-Commerce</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="main-nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+            <ul class="main-nav-container">
+                <li class="main-nav-item hide-on-mobile"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="main-nav-item hide-on-mobile" id="dropdown">
+                    <a class="nav-link">Servicios</a><img src="dropdown.webp" alt="dropdown arrow">
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="webdesign.html">Diseño Web</a></li>
+                            <li><a href="seo.html">Optimización SEO</a></li>
+                            <li><a href="marketing.html">Marketing Digital</a></li>
+                            <li><a href="ecommerce.html">E-Commerce</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="main-nav-item hide-on-mobile"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-cta">Contacto</a></li>
+                <li class="main-nav-item menu-button" onclick="showSideBar()"><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+                    <path fill="#fff" d="M0 18C0 8.059 8.059 0 18 0h28c9.941 0 18 8.059 18 18v28c0 9.941-8.059 18-18 18H18C8.059 64 0 55.941 0 46V18Z"/>
+                    <path fill="#B8B8B8" fill-rule="evenodd" d="M46 2H18C9.163 2 2 9.163 2 18v28c0 8.837 7.163 16 16 16h28c8.837 0 16-7.163 16-16V18c0-8.837-7.163-16-16-16ZM18 0C8.059 0 0 8.059 0 18v28c0 9.941 8.059 18 18 18h28c9.941 0 18-8.059 18-18V18c0-9.941-8.059-18-18-18H18Z" clip-rule="evenodd"/>
+                    <path fill="#444" fill-rule="evenodd" d="M50 48H14v-6h36v6Zm0-12H14v-6h36v6Zm0-12H14v-6h36v6Z" clip-rule="evenodd"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="nosotros-hero">
+        <div class="nosotros-hero-text">
+            <h1 class="inter-extra-bold" style="margin-bottom: 40px;">Somos tu aliado digital en la transformación empresarial.</h1>
+            <a href="#" class="nav-cta inter-extra-bold">Solicita tu Cotización</a>
+        </div>
+        <img src="nosostroshero.webp" alt="Hero Image" class="hero-img">
+    </div>
+    <div class="nosotros-aboutus">
+        <img src="nosotros1.webp" alt="About Us Image">
+        <div class="aboutustxt">
+            <h2 class="inter-extra-bold">Construyendo juntos el futuro de tu negocio</h2>
+            <p>Nuestra misión es impulsar el crecimiento y éxito de tu empresa a través de soluciones innovadoras y personalizadas. Nos dedicamos a comprender a fondo tus necesidades y objetivos, trabajando codo a codo contigo para desarrollar estrategias efectivas que transformen tu visión en realidad. <br><br> Creemos en el poder de la colaboración y la tecnología para construir un futuro próspero para cualquier negocio, proporcionando servicios que no solo cumplen, sino que superan tus expectativas. Juntos, podemos alcanzar nuevas alturas y hacer de tu negocio un referente en su industria.</p>
+            <a href="#">¿Hablamos?</a>
+        </div>
+    </div>
+    <div class="proceso">
+        <h2 class="inter-extra-bold" >Nuestro enfoque y metodología</h2>
+        <p class="inter-regular">En Zeta, adoptamos un enfoque integral y centrado en el cliente para todos nuestros servicios. Nuestra metodología se basa en comprender a fondo las necesidades y objetivos de cada cliente, permitiéndonos ofrecer estrategias personalizadas que generan resultados tangibles.</p>
+        <div class="line-container">
+            <div class="circle inter-semi-bold">1</div>
+            <div class="circle inter-semi-bold">2</div>
+            <div class="circle inter-semi-bold">3</div>
+            <div class="circle last-circle inter-semi-bold">4</div>
+        </div>
+        <div class="gridcontainer-nosotros fourgrid-nosotros">
+            <div>
+                <h3 class="inter-semi-bold"><span class="display-mobile">1 </span>Investigación y Análisis</h3>
+                <p>Realizamos una investigación exhaustiva para entender tu mercado, audiencia y competidores, permitiéndonos desarrollar estrategias informadas y efectivas.</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold"><span class="display-mobile">2 </span>Desarrollo de Estrategia</h3>
+                <p>Creamos planes de acción a medida, diseñados específicamente para abordar tus objetivos empresariales y maximizar el impacto de nuestras soluciones.</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold"><span class="display-mobile">3 </span>Ejecución de la Estrategia</h3>
+                <p>Implementamos las estrategias en los canales digitales más adecuados, asegurando que cada acción esté alineada con tus metas y genere valor.</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold"><span class="display-mobile">4 </span>Monitoreo y Optimización</h3>
+                <p>Analizamos continuamente el rendimiento de nuestras estrategias y realizamos ajustes necesarios para optimizar los resultados y garantizar el éxito a largo plazo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <h2 class="inter-extra-bold services-title">Contacto</h2>
+            <p class="inter-regular contact-sub">¿Listo para llevar tu presencia online al siguiente nivel? ¡Contáctanos ahora!</p>
+            <input type="hidden" name="access_key" value="44432a92-8102-4726-a042-c7780539a7f8">
+            <div class="contact-top">
+                <div class="contact-input-container">
+                    <p>NOMBRE<span class="required_red">*</span></p>
+                    <input type="text" name="name" placeholder="Nombre" class="contact-inputs" required>
+                </div>
+                <div class="contact-input-container">
+                   <p>CORREO<span class="required_red">*</span></p>
+                    <input type="email" name="email" placeholder="Correo" class="contact-inputs" required> 
+                </div>
+                <div class="contact-input-container">
+                    <p>TELÉFONO</p>
+                    <input type="tel" name="telephone" placeholder="Teléfono" class="contact-inputs">
+                </div>
+            </div>
+            <div class="contact-message-container">
+                <p>MENSAJE<span class="required_red">*</span></p>
+                <textarea name="message" placeholder="Cuéntanos sobre tu proyecto. Requisitos, ideas, objetivos, o ejemplos." class="contact-inputs" required></textarea>
+            </div>
+            <button type="submit" class="forum-button">¡ENVIAR MENSAJE!</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
