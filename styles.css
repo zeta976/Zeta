@@ -176,6 +176,7 @@ h1 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom: 4px solid #0B477A;
+    animation: fade 0.4s ease-in-out;
 }
 
 .main-nav-item:hover .dropdown-menu {
@@ -281,7 +282,7 @@ h1 {
 }
 
 .service:hover {
-transform: scale(1.10);
+transform: scale(1.08);
 }
 
 .service img {
@@ -883,7 +884,8 @@ transform: scale(1.10);
     font-size: 18px;
     text-align: center;
     margin: 0 auto;
-    width: 285px;
+    width: 90%;
+    max-width: 285px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -971,6 +973,98 @@ transform: scale(1.10);
     width: 26px;
     margin-left: 20px;
     transition: transform 0.25s ease-in;
+}
+
+footer {
+    background-color: #243442;
+}
+footer div{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.main-footer{
+    padding: 60px 120px 50px 120px;
+}
+footer div div div, .footer-about{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+address {
+    line-height: 30px;
+}
+
+.footer-nav {
+    width: 55%;
+}
+
+.footer-about{
+    width: 28%;
+}
+
+.footer-text, footer a, footer a:link, footer a:visited, footer a:active{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+footer a:hover{
+    color: #4084BF;
+}
+
+footer a{
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-size: 29px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-title::after {
+    content: "";
+    display: block;
+    width: 82px;
+    height: 4px;
+    background-color: #4084BF;
+    position: absolute;
+    left: 0;
+    bottom: -12px; /* Adjust this value to control the distance between the text and the underline */
+}
+
+.social {
+    flex-direction: row;
+    margin-top: 20px;
+}
+.social img {
+    width: 47px;
+    height: 47px;
+    margin-right: 13px;
+    transition: transform .2s;
+}
+
+.social img:hover {
+    transform: translateY(-4px);
+}
+
+.copyright {
+    background-color: #1F272E;
+    justify-content: space-between;
+    padding: 15px 120px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 14px;
 }
 
 @keyframes fade {
@@ -1109,13 +1203,17 @@ transform: scale(1.10);
     }
 
     .proceso h2 {
-        font-size: 36px;
+        font-size: 35px;
+        width: 90%;
     }
 
     .proceso p {
         font-size: 18px;
     }
 
+    .beneficios h2 {
+        font-size: 35px;
+    }
     .gridcontainer-nosotros {
         flex-direction: column;
         align-items: flex-start;
@@ -1159,6 +1257,30 @@ transform: scale(1.10);
         width: 90%;
         max-width: 500px;
         margin-bottom: 50px;
+    }
+    .main-footer {
+        padding-left: 10%;
+        padding-right: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-about {
+        width: 100%;
+        max-width: 330px;
+    }
+    .footer-nav {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .footer-nav div{
+        margin-right: 50px;
+    }
+    .copyright {
+        padding: 15px 10%;
     }
 }
 

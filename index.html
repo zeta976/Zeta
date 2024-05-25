@@ -42,7 +42,7 @@
                     </ul>
                 </li>
                 <li class="main-nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                <li class="main-nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                <li class="main-nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
             <ul class="main-nav-container">
                 <li class="main-nav-item hide-on-mobile"><a href="index.html" class="nav-link">Inicio</a></li>
@@ -58,7 +58,7 @@
                     </div>
                 </li>
                 <li class="main-nav-item hide-on-mobile"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                <li class="main-nav-item hide-on-mobile"><a href="#" class="nav-cta">Contacto</a></li>
+                <li class="main-nav-item hide-on-mobile"><a href="#contact" class="nav-cta">Contacto</a></li>
                 <li class="main-nav-item menu-button" onclick="showSideBar()"><a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
                     <path fill="#fff" d="M0 18C0 8.059 8.059 0 18 0h28c9.941 0 18 8.059 18 18v28c0 9.941-8.059 18-18 18H18C8.059 64 0 55.941 0 46V18Z"/>
@@ -73,11 +73,11 @@
         <div class="hero-text">
             <h1 class="inter-extra-bold">Eleva tu presencia en linea con Zeta</h1>
             <p class="inter-regular hero-sub">Nos dedicamos a transformar tus ideas en experiencias digitales impactantes. Combinamos creatividad y experiencia técnica para desarrollar soluciones web que se adaptan a tus necesidades y objetivos.</p>
-            <a href="#" class="nav-cta inter-extra-bold">Solicita tu Cotización</a>
+            <a href="#contact" class="nav-cta inter-extra-bold">Solicita tu Cotización</a>
         </div>
         <img src="heroimg.webp" alt="Hero Image" class="hero-img">
     </div>
-    <div class="services">
+    <div class="services" id="servicios">
         <h2 class="inter-extra-bold services-title">Nuestros Servicios</h2>
         <p class=" inter-regular services-sub">Descubre cómo podemos ayudar transformar tu presencia online</p>
         <div class="services-container">
@@ -115,7 +115,37 @@
             <a href="nosotros.html">Más Información</a>
         </div>
     </div>
-    <div class="contact-container">
+    <div class="beneficios">
+        <h2 class="inter-extra-bold">Estadísticas que podrían interesarte</h2>
+        <p class="inter-regular" style="font-size: 20px; color: #1c1c1c; margin-left: auto; margin-right: auto; text-align: center; margin-bottom: 45px;">Cifras que respaldan la efectividad de nuestras estrategias.</p>
+        <div class="statscontainer">
+            <div>
+                <h3 class="inter-semi-bold">94%</h3>
+                <p>De las primeras impresiones que se lleva tu  marca están relacionadas con el diseño de tu sitio web</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold">67%</h3>
+                <p>De los usuarios percive negativamente tu marca si la experiencia de usuario es deficiente</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold">87%</h3>
+                <p>De los consumidores investigaron negocios locales con búsquedas de Google en el 2022, un 6% más que en 2021</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold">73%</h3>
+                <p>De las empresas invierten en diseño y branding para diferenciar su marca de la competencia</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold">2.640mill</h3>
+                <p>Más del 33% de la población mundial admite haber realizado compras por internet en el último año</p>
+            </div>
+            <div>
+                <h3 class="inter-semi-bold">9,4%</h3>
+                <p>En 2024, el pronóstico de crecimiento de las ventas a través de eCommerce en retail es de alrededor del 9.4%</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container" id="contact">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
             <h2 class="inter-extra-bold services-title">Contacto</h2>
             <p class="inter-regular contact-sub">¿Listo para llevar tu presencia online al siguiente nivel? ¡Contáctanos ahora!</p>
@@ -143,4 +173,46 @@
     </div>
     <script src="app.js"></script>
 </body>
+<footer>
+    <div class="main-footer">
+        <div class="footer-about">
+            <p class="footer-title inter-semi-bold">Zeta</p>
+            <p class="footer-text">Somos una agencia ubicada en Colombia que brinda servicios y soluciones digitales para impulsar la presencia y el exito en linea de tu negocio.</p>
+            <div class="social">
+                <a href="instagram.com"><img src="instagram.webp" alt="instagram"></a>
+                <a href="facebook.com"><img src="facebook.webp" alt="Facebook"></a>
+                <a href="x.com"><img src="x.webp" alt="X"></a>
+                <a href="gmail.com"><img src="mail.webp" alt="Mail"></a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div>
+                <p class="footer-title inter-semi-bold">Navega</p>
+                <a href="index.html">Inicio</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div>
+                <p class="footer-title inter-semi-bold">Servicios</p>
+                <a href="webdesign.html">Diseño Web</a>
+                <a href="seo.html">Optimización SEO</a>
+                <a href="marketing.html">Marketing Digital</a>
+                <a href="ecommerce.html">E-Commerce</a>
+            </div>
+            <div>
+                <p class="footer-title inter-semi-bold">Contacto</p>
+                <address class="footer-text">
+                    info@zetaweb.co <br>
+                    +57 312 345 6789 <br>
+                    @zetaweb
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Copyright 2024 - zetaweb.co</p>
+        <p style="text-align: right; margin-left: 15px;">Política de Privacidad</p>
+    </div>
+</footer>
 </html>
