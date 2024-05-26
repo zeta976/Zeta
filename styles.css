@@ -264,7 +264,6 @@ h1 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
     text-align: center;
     color: #0B477A;
 }
@@ -272,6 +271,7 @@ h1 {
 .services-container {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 60px;
     padding-bottom: 130px;
     height: 630px;  /*Set a fixed height for the services container */
 }
