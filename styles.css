@@ -259,6 +259,7 @@ h1 {
 
 .services-sub {
     display: inline-block;
+    position: static;
     font-size: 18px;
     font-weight: 500;
     width: 90%;
@@ -268,8 +269,8 @@ h1 {
     color: #0B477A;
 }
 
-
 .services-container {
+    position: static;
     display: flex;
     justify-content: space-evenly;
     -webkit-appearance: initial;
