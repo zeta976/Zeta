@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -244,6 +246,9 @@ h1 {
 .services{
     background-color: #E7F0F3;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .services-title {
@@ -273,10 +278,7 @@ h1 {
     position: static;
     display: flex;
     justify-content: space-evenly;
-    -webkit-appearance: initial;
-    appearance: initial;
-    padding-bottom: 130px;
-    height: 630px;  /*Set a fixed height for the services container */
+    padding-bottom: 50px;
 }
 
 .service {
@@ -285,7 +287,7 @@ h1 {
     background-color: #f9f9f9;
     border-radius: 25px;
     transition: transform 0.3s ease-in-out;
-    height:540px;
+    box-sizing: border-box;
 }
 
 .service:hover {
@@ -297,9 +299,7 @@ transform: scale(1.08);
     height: auto;
     display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    margin: 10px auto 0;
 }
 
 .service h3 {
@@ -368,6 +368,7 @@ transform: scale(1.08);
         flex-wrap: nowrap;
         align-items: center;
         height: 2350px;
+        padding: 0 5%;
     }
     .service{
         width: 90%;
