@@ -271,6 +271,8 @@ h1 {
 .services-container {
     display: flex;
     justify-content: space-evenly;
+    -webkit-appearance: initial;
+    appearance: initial;
     padding-top: 60px;
     padding-bottom: 130px;
     height: 630px;  /*Set a fixed height for the services container */
