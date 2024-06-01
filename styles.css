@@ -485,6 +485,7 @@ transform: scale(1.08);
     background-color: #E7F0F3;
     margin: 0 auto;
     padding-bottom: 70px;
+    padding-top: 55px;
 }
 
 .contact-form {
@@ -1015,7 +1016,7 @@ address {
     width: 28%;
 }
 
-.footer-text, footer a, footer a:link, footer a:visited, footer a:active{
+.footer-text, .footer-nav a, .footer-nav a:link, .footer-nav a:visited, .footer-nav a:active{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -1024,13 +1025,14 @@ address {
     color: #cccccc;
 }
 
-footer a:hover{
+.footer-nav a:hover{
     color: #4084BF;
 }
 
-footer a{
+.footer-nav a{
     margin-bottom: 10px;
 }
+
 
 .footer-title {
     font-size: 29px;
@@ -1065,7 +1067,7 @@ footer a{
     transform: translateY(-4px);
 }
 
-.copyright {
+.copyright{
     background-color: #1F272E;
     justify-content: space-between;
     padding: 15px 120px;
@@ -1077,6 +1079,61 @@ footer a{
     "wdth" 100;
     font-size: 14px;
 }
+
+.copyright a, .copyright a:link, .copyright a:visited, .copyright a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: #4084BF;;
+}
+
+.politicasbody {
+    padding: 60px;
+}
+
+.politicasbody h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 45px;
+}
+
+.politicasbody h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 25px;
+}
+
+.politicasbody h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 18px;
+}
+
+.politicasbody p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 16px;
+}
+
+
 
 @-webkit-keyframes fade {
     from {
@@ -1305,6 +1362,11 @@ footer a{
     }
     .copyright {
         padding: 15px 10%;
+    }
+    .copyright a {
+        padding: 0;
+        margin: 0;
+
     }
 }
 

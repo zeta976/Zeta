@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Nosotros - Agencia digital Zeta</title>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <meta name="keywords" content="agencia, diseño web, SEO, marketing digital, comercio electrónico">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Agencia Digital - Ofrecemos servicios de Diseño de páginas Web, Optimización SEO, Comercio Electrónico y Marketing Digital.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="inter-semi-bold box colored">
+        <a href="index.html" style="height: 70px;"><img src="img/logo.webp" alt="Logo de Zeta" class="header-img"></a>
+        <nav class="main-nav">
+            <ul class="sidebar">
+                <li class="nav-side-close" onclick="hideSideBar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+                    <path fill="#B8B8B8" fill-rule="evenodd" d="M46 2H18C9.163 2 2 9.163 2 18v28c0 8.837 7.163 16 16 16h28c8.837 0 16-7.163 16-16V18c0-8.837-7.163-16-16-16ZM18 0C8.059 0 0 8.059 0 18v28c0 9.941 8.059 18 18 18h28c9.941 0 18-8.059 18-18V18c0-9.941-8.059-18-18-18H18Z" clip-rule="evenodd"/>
+                    <path fill="#444" d="m21.243 17 25.456 25.456-4.243 4.242L17 21.243z"/>
+                    <path fill="#444" d="M17 42.456 42.456 17l4.242 4.243-25.455 25.456z"/>
+                    </svg>
+                </li>
+                <li class="main-nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="main-nav-item"><span class="nav-link" onclick="toggleDropdown()">Servicios</span><img src="img/dropdown.webp" alt=""></li>
+                <li class="dropdown-sidebar">
+                    <ul>
+                        <li class="main-nav-item drop-item"><a href="webdesign.html" class="nav-link">Diseño Web</a></li>
+                        <li class="main-nav-item drop-item"><a href="seo.html" class="nav-link">Optimización SEO</a></li>
+                        <li class="main-nav-item drop-item"><a href="marketing.html" class="nav-link">Marketing Digital</a></li>
+                        <li class="main-nav-item drop-item"><a href="ecommerce.html" class="nav-link">E-Commerce</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="main-nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <ul class="main-nav-container">
+                <li class="main-nav-item hide-on-mobile"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="main-nav-item hide-on-mobile" id="dropdown">
+                    <span class="nav-link" style="border-bottom: none;">Servicios</span><img src="img/dropdown.webp" alt="">
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="webdesign.html">Diseño Web</a></li>
+                            <li><a href="seo.html">Optimización SEO</a></li>
+                            <li><a href="marketing.html">Marketing Digital</a></li>
+                            <li><a href="ecommerce.html">E-Commerce</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="main-nav-item hide-on-mobile"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="main-nav-item hide-on-mobile"><a href="#contact" class="nav-cta">Contacto</a></li>
+                <li class="main-nav-item menu-button" onclick="showSideBar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+                    <path fill="#fff" d="M0 18C0 8.059 8.059 0 18 0h28c9.941 0 18 8.059 18 18v28c0 9.941-8.059 18-18 18H18C8.059 64 0 55.941 0 46V18Z"/>
+                    <path fill="#B8B8B8" fill-rule="evenodd" d="M46 2H18C9.163 2 2 9.163 2 18v28c0 8.837 7.163 16 16 16h28c8.837 0 16-7.163 16-16V18c0-8.837-7.163-16-16-16ZM18 0C8.059 0 0 8.059 0 18v28c0 9.941 8.059 18 18 18h28c9.941 0 18-8.059 18-18V18c0-9.941-8.059-18-18-18H18Z" clip-rule="evenodd"/>
+                    <path fill="#444" fill-rule="evenodd" d="M50 48H14v-6h36v6Zm0-12H14v-6h36v6Zm0-12H14v-6h36v6Z" clip-rule="evenodd"/>
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="politicasbody">
+        <h1>Política de Privacidad</h1>
+        <p>Actualizado: 28/05/2024 <br><br></p>
+        <p>Este aviso de privacidad para Zeta (“nosostros”, “nos” o “nuestro”), describe cómo y para qué recopilamos, almacenamos, procesamos, usamos, y/o compartimos su información cuando utiliza nuestros servicios, como cuando usted: <br><br></p>
+        <p style="text-indent: 2em;">- Visita nuestra página web en https://www.zetaweb.co, o cualquier sitio web nuestro que enlace a este aviso de privacidad. <br><br></p>
+        <p style="text-indent: 2em;">- Interactúa o se comunica con nosotros de otras formas como formularios de contacto, correos electrónicos, mensajes de texto, etc. <br><br></p>
+        <p>Leer este aviso de privacidad le ayudará a comprender sus derechos y opciones de privacidad. Si no está de acuerdo con nuestras políticas o prácticas, abstenerse de utilizar nuestros servicios. Si aún tiene alguna pregunta o inquietud, contáctenos al correo <a href="mailto:contact.zetaweb@gmail.com">contact.zetaweb@gmail.com</a><br><br></p>
+        <h2>1. ¿Qué información recopilamos?<br><br></h2>
+        <h3>Información personal que usted nos proporciona: </h3>
+        <p>Recopilamos información personal que usted nos proporciona voluntariamente cuando expresa interés en obtener información sobre nuestros productos o servicios, o de otro modo cuando se comunica con nosotros. <br><br>La información personal que recopilamos depende del contexto de sus interacciones en nuestra página web o con nuestro personal, las elecciones que haga y las funciones o servicios que utilice. La información que recopilamos puede incluir lo siguiente:</p>
+        <p style="padding-left: 2em;">- Nombre</p>
+        <p style="padding-left: 2em;">- Números de teléfono</p>
+        <p style="padding-left: 2em;">- Correos Electrónicos</p>
+        <p style="padding-left: 2em;">- Otros datos de contacto</p>
+        <p style="padding-left: 2em;">- Mensajes adjuntos a formularios de contacto <br><br></p>
+        <h3>Información Sensible</h3>
+        <p>No procesamos información sensible: <br><br></p>
+        <p>Toda la información personal que nos proporcione debe ser verdadera, completa y precisa, y debe notificarnos de cualquier cambio en dicha información <br><br></p>
+        <h3>Información recopilada automáticamente:</h3>
+        <p>Recopilamos automáticamente cierta información cuando visita, utiliza o navega por los Servicios. Esta información no revela su identidad específica (como su nombre o información de contacto), pero puede incluir información del dispositivo y de uso, como su dirección IP, características del navegador y del dispositivo, sistema operativo, preferencias de idioma, URL de referencia, nombre del dispositivo, país, ubicación., información sobre cómo y cuándo utiliza nuestros Servicios y otra información técnica. Esta información es necesaria principalmente para mantener la seguridad y el funcionamiento de nuestros Servicios, y para nuestros fines de análisis e informes internos <br><br> Como muchas empresas, también recopilamos información a través de cookies y tecnologías similares. <br><br>La información que recopilamos incluye:</p>
+        <p style="padding-left: 2em;">- Datos de registro y uso. Los datos de registro y uso son información relacionada con el servicio, diagnóstico, uso y rendimiento que nuestros servidores recopilan automáticamente cuando usted accede o utiliza nuestros Servicios y que registramos en archivos de registro. Dependiendo de cómo interactúa con nosotros, estos datos de registro pueden incluir su dirección IP, información del dispositivo, tipo de navegador y configuración e información sobre su actividad en los Servicios (como las marcas de fecha/hora asociadas con su uso, páginas y archivos vistos)., búsquedas y otras acciones que realiza, como las funciones que utiliza), información de eventos del dispositivo (como actividad del sistema, informes de errores (a veces llamados"volcados") y configuración de hardware). <br><br></p>
+        <p style="padding-left: 2em;">- Datos del dispositivo. Recopilamos datos del dispositivo, como información sobre su computadora, teléfono, tableta u otro dispositivo que utilice para acceder a los servicios. Dependiendo del dispositivo utilizado, los datos de este dispositivo pueden incluir información como su dirección IP (o servidor proxy), números de identificación del dispositivo y de la aplicación, ubicación, tipo de navegador, modelo de hardware, proveedor de servicios de Internet y/o operador de telefonía móvil, sistema operativo y información de configuración del sistema. <br><br></p>
+        <p style="padding-left: 2em;">- Datos de localización. Recopilamos datos de ubicación, como información sobre la ubicación de su dispositivo, que puede ser precisa o imprecisa. La cantidad de información que recopilamos depende del tipo y la configuración del dispositivo que utiliza para acceder a los Servicios. Por ejemplo, podemos utilizar GPS y otras tecnologías para recopilar datos de geolocalización que nos indiquen su ubicación actual (según su dirección IP). Puede optar por no permitirnos recopilar esta información rechazando el acceso a la información o desactivando la configuración de Ubicación en su dispositivo. Sin embargo, si elige no participar, es posible que no pueda utilizar ciertos aspectos de los servicios. <br><br></p>
+        <h2>2. ¿Cómo procesamos su información? <br><br></h2>
+        <p>Procesamos su información personal por diversos motivos, dependiendo del contexto de sus interacciones con nuestros servicios, lo que incluye: <br><br></p>
+        <p style="padding-left: 2em;">- <b>Entregar y facilitar la prestación de servicios al usuario.</b> Podemos procesar su información para brindarle el servicio solicitado. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Responder a las consultas de los usuarios/ofrecer soporte a los usuarios.</b> Podemos procesar su información para responder a sus consultas y resolver cualquier problema potencial que pueda tener con el servicio solicitado. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Para solicitar comentarios.</b> Podemos procesar su información cuando sea necesario para solicitar comentarios y comunicarnos con usted sobre su uso de nuestros servicios. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Para enviarle comunicaciones promocionales y de marketing.</b> Podemos procesar su información para brindarle el servicio solicitado. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Identificar tendencias de uso.</b> Podemos procesar información sobre cómo utiliza nuestros servicios para comprender mejor cómo se utilizan y poder mejorarlos. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Determinar la efectividad de nuestras campañas de marketing y promoción.</b> Podemos procesar su información para comprender mejor cómo proporcionar campañas promocionales y de marketing que sean más relevantes para nuestros <br><br></p>
+        <p style="padding-left: 2em;">- <b>Para salvar o proteger el interés vital de un individuo.</b> Podemos procesar su información cuando sea necesario para salvar o proteger el interés vital de un individuo, como por ejemplo para evitar daños. <br><br></p>
+        <h2>3. ¿Con qué bases legales tratamos su información? <br><br></h2>
+        <p><i><b>Resumen:</b> Solo procesamos su información personal cuando consideramos que es necesario y tenemos una razón legal válida (base legal) para hacerlo bajo la ley aplicable, como con su consentimiento, para cumplir con las leyes, para brindarle servicios, para celebrar o realizar nuestras obligaciones contractuales, para proteger sus derechos, o para realizar nuestros intereses comerciales legítimos.</i><br><br></p>
+        <p><u><i><b>Si se encuentra en la UE o el Reino Unido, esta sección se aplica a usted:</b></i></u><br><br></p>
+        <p>El Reglamento General de Protección de Datos (GDPR) y el GDPR del Reino Unido nos exigen que expliquemos las bases legales válidas en las que nos basamos para procesar su información personal. Como tal, podemos basarnos en las siguientes bases legales para procesar su información personal: <br><br></p>
+        <p style="padding-left: 2em;">- <b>Consentir.</b> Podemos procesar su información si nos ha dado permiso (es decir,,consentimiento) para utilizar su información personal para un propósito específico. Puede retirar su consentimiento en cualquier momento. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Ejecución de un contrato.</b> Podemos procesar su información personal cuando creamos que es necesario para realizar nuestras obligaciones contractuales con usted, incluida la prestación de nuestros servicios o a petición suya antes de celebrar un contrato con usted <br><br></p>
+        <p style="padding-left: 2em;">- <b>Intereses legítimos.</b> Podemos procesar su información cuando creamos que es razonablemente necesario para lograr nuestros intereses comerciales legítimos y esos intereses no superan sus intereses y derechos y libertades fundamentales. Por ejemplo, podemos procesar su información personal para algunos de los propósitos descritos con el fin de:<br><br></p>
+        <p style="padding-left: 4em;">- Enviar a los usuarios información sobre ofertas especiales y descuentos en nuestros productos y servicios.</p>
+        <p style="padding-left: 4em;">- Analizar cómo se utilizan nuestros servicios con el fin de mejorarlos para atraer y retener a los usuarios.</p>
+        <p style="padding-left: 4em;">- Apoyar nuestras actividades de marketing.</p>
+        <p style="padding-left: 4em;">- Comprender la forma en la que nuestros usuarios utilizan nuestros productos y servicios para que podamos mejorar la experiencia del usuario. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Obligaciones legales.</b> Podemos procesar su información cuando creamos que es necesario para cumplir con nuestras obligaciones legales, como cooperar con un organismo encargado de hacer cumplir la ley o una agencia reguladora, ejercer o defender nuestros derechos legales, o divulgar su información como prueba en un litigio en el que estemos involucrados.<br><br></p>
+        <p style="padding-left: 2em;">- <b>Intereses vitales.</b> Podemos procesar su información cuando creamos que es necesario para proteger sus intereses vitales o los intereses vitales de un tercero, como situaciones que involucran amenazas potenciales a la seguridad de cualquier persona.<br><br></p>
+        <p><u><i><b>Si se encuentra en Canadá, esta sección se aplica a usted:</b></i></u><br><br></p>
+        <p>Podemos procesar su información si nos ha dado un permiso específico (es decir, consentimiento expreso) para utilizar su información personal para un propósito específico, o en situaciones en las que se puede inferir su permiso (es decir, consentimiento implícito inequívoco). Puede retirar su consentimiento en cualquier momento. <br><br>En algunos casos excepcionales, es posible que la ley aplicable nos permita procesar su información sin su consentimiento, incluidos, por ejemplo: <br><br></p>
+        <p style="padding-left: 2em;">- Si la recopilación redunda claramente en beneficio de un individuo y no se puede obtener el consentimiento de manera oportuna. <br><br></p>
+        <p style="padding-left: 2em;">- Para investigaciones y detección y prevención de fraudes. <br><br></p>
+        <p style="padding-left: 2em;">- Para transacciones comerciales siempre que se cumplan ciertas condiciones. <br><br></p>
+        <p style="padding-left: 2em;">- Si está contenido en una declaración de un testigo la recolección es necesaria para evaluar, procesar o resolver un reclamo de seguro. <br><br></p>
+        <p style="padding-left: 2em;">- Para identificar personas heridas, enfermas o fallecidas y comunicarse con los familiares más cercanos. <br><br></p>
+        <p style="padding-left: 2em;">- Si tenemos motivos razonables para creer que una persona ha sido, es o puede ser víctima de abuso financiero. <br><br></p>
+        <p style="padding-left: 2em;">- Si es razonable esperar que la recopilación y el uso con consentimiento comprometan la disponibilidad o la exactitud de la información y la recopilación es razonable para fines relacionados con la investigación de un incumplimiento de un acuerdo o una contravención de las leyes de Canadá o de una provincia. <br><br></p>
+        <p style="padding-left: 2em;">- Si se requiere la divulgación para cumplir con una citación, orden judicial, orden judicial o reglas del tribunal relacionadas con la producción de registros. <br><br></p>
+        <p style="padding-left: 2em;">- Si fue producida por un individuo en el curso de su empleo, negocio o profesión y la recopilación es consistente con los propósitos para los cuales se produjo la información. <br><br></p>
+        <p style="padding-left: 2em;">- Si la colección tiene como único fin periodístico, artístico o literario. <br><br></p>
+        <p style="padding-left: 2em;">- Si la información está disponible públicamente y está especificada por la normativa. <br><br></p>
+        <h2>4. ¿Cuándo y con quién compartimos su información personal? <br><br></h2>
+        <p>Es posible que necesitemos compartir su información personal en las siguientes situaciones: <br><br></p>
+        <p style="padding-left: 2em;">- <b>Transferencias de negocios.</b> Podemos compartir o transferir su información  en relación con, o durante las negociaciones de cualquier fusión, venta de activos de la empresa, financiación o adquisición de todo o una parte de nuestro negocio a otra empresa o persona. <br><br></p>
+        <p style="padding-left: 2em;">- <b>Compañeros comerciales.</b> Podemos compartir su información con nuestros socios comerciales para ofrecerle ciertos productos, servicios o promociones. <br><br></p>
+        <h2>5. ¿Utilizamos Cookies y otras tecnologías de seguimiento?<br><br></h2>
+        <p> Podemos utilizar cookies y tecnologías de seguimiento similares (como balizas web y píxeles) para recopilar información cuando interactúa con nuestros servicios. Algunas tecnologías de seguimiento en línea nos ayudan a mantener la seguridad de nuestros servicios, previene fallas, corrige errores, guarda tus preferencias y ayuda con las funciones básicas del sitio. <br><br></p>
+        <h3>Google Analytics</h3>
+        <p>Podemos compartir su información con Google Analytics para rastrear y analizar su uso de nuestros servicios. Las funciones publicitarias de Google Analytics que podemos utilizar incluyen: Remarketing con Google Analytics, Informes de impresiones de la Red de Display de Google e Informes de intereses y datos demográficos de Google Analytics. Para optar por no ser rastreado por Google Analytics en todos los Servicios, visite https://tools.google.com/dlpage/gaoptout Puede optar por no participar en las funciones publicitarias de Google Analytics a través de Configuración de anuncios y Configuración de anuncios para aplicaciones móviles. Otros medios de exclusión voluntaria incluyen http://optout.networkadvertising.org/ y http://www.networkadvertising.org/mobile-choice. Para obtener más información sobre las prácticas de privacidad de Google, visite la página Términos y privacidad de Google en https://policies.google.com/privacy. <br><br></p>
+        <h2>6. ¿Cuánto tiempo conservamos su información? <br><br></h2>
+        <p>Solo conservaremos su información personal durante el tiempo que sea necesario para los fines establecidos en este aviso de privacidad, a menos que la ley exija o permita un período de retención más prolongado (como requisitos fiscales, contables u otros requisitos legales). <br><br>Cuando no tengamos una necesidad comercial legítima y continua de procesar su información personal, eliminaremos o haremos anónima dicha información o, si esto no es posible (por ejemplo, porque su información personal se ha almacenado en archivos de respaldo), almacenaremos de forma segura su información personal y la aislaremos de cualquier procesamiento posterior hasta que sea posible eliminarla. <br><br></p>
+        <h2>7. ¿Cómo mantenemos su información segura? <br><br></h2>
+        <p>Hemos implementado medidas de seguridad técnicas y organizacionales razonables y apropiadas diseñadas para proteger la seguridad de cualquier información personal que procesamos. Sin embargo, a pesar de nuestras medidas de seguridad y esfuerzos para proteger su información, no se puede garantizar que ninguna transmisión electrónica a través de Internet o tecnología de almacenamiento de información sea 100% segura, por lo que no podemos prometer ni garantizar que piratas informáticos, ciberdelincuentes u otros terceros no autorizados no podrán vulnerar nuestra seguridad y recopilar, acceder, robar o modificar indebidamente su información. Aunque haremos todo lo posible para proteger su información personal, la transmisión de información personal hacia y desde nuestros Servicios es bajo su propio riesgo. Sólo debe acceder a nuestros servicios dentro de un entorno seguro. <br><br></p>
+        <h2>8. ¿Recogemos información de menores de edad? <br><br></h2>
+        <p>No recopilamos, solicitamos datos ni comercializamos deliberadamente a niños menores de 18 años, ni vendemos dicha información personal a sabiendas. Al utilizar nuestros servicios, usted declara que tiene al menos 18 años o que es el padre o tutor de dicho menor y acepta el uso de los servicios por parte de dicho menor dependiente. Si nos enteramos de que se ha recopilado información personal de usuarios menores de 18 años, tomaremos medidas razonables para eliminar de inmediato dichos datos de nuestros registros. Si tiene conocimiento de algún dato que podamos haber recopilado de niños menores de 18 años, comuníquese con nosotros en contact.zetaweb@gmail.com <br><br></p>
+        <h2>9. ¿Cuáles son sus derechos de privacidad? <br><br></h2>
+        <p>Consideraremos y actuaremos ante cualquier solicitud de acuerdo con las leyes de protección de datos aplicables. <br><br></p>
+        <p>En algunas regiones (como el Espacio económico europeo (EEE), el Reino Unido, Suiza y Canadá), usted tiene ciertos derechos según las leyes de protección de datos aplicables. Estos pueden incluir el derecho (i) a solicitar acceso y obtener una copia de su información personal, (ii) a solicitar rectificación o eliminación; (iii) restringir el procesamiento de su información personal; (iv) si aplica, a la portabilidad de los datos; y (v) no estar sujeto a la toma de decisiones automatizada. En determinadas circunstancias, también puede tener derecho a oponerse al procesamiento de su información personal. Puede realizar dicha solicitud comunicándose con nosotros utilizando los datos de contacto proporcionados en la sección "¿Cómo puede contactarnos sobre este aviso?" abajo. <br><br></p>
+        <p>Si se encuentra en el EEE o el Reino Unido y cree que estamos procesando ilegalmente su información personal, también tiene derecho a presentar una queja ante la autoridad de protección de datos de su Estado miembro o ante la autoridad de protección de datos del Reino Unido.</p>
+        <p>Si se encuentra en Suiza, puede comunicarse con el Comisionado Federal de Información y Protección de Datos <br><br></p>
+        <p><b><u>Retirar su consentimiento:</u></b> Si dependemos de su consentimiento para procesar su información personal, el cual puede ser consentimiento expreso y/o implícito dependiendo de la ley aplicable, usted tiene derecho a retirar su consentimiento en cualquier momento. Puede retirar su consentimiento en cualquier momento poniéndose en contacto con nosotros utilizando los datos de contacto proporcionados en la sección"¿Cómo puede contactarnos sobre este aviso?" abajo. <br><br> Sin embargo, tenga en cuenta que esto no afectará a la licitud del tratamiento antes de su retirada ni,cuando la ley aplicable lo permita, afectará el procesamiento de su información personal realizado basándose en motivos de procesamiento legales distintos del consentimiento. <br><br></p>
+        <p><b><u>Cookies y tecnologías similares:</u></b> La mayoría de los navegadores web están configurados para aceptar cookies de forma predeterminada. Si lo prefiere, normalmente puede optar por configurar su navegador para que elimine las cookies y las rechace. Si elige eliminar las cookies o rechazarlas, esto podría afectar ciertas características o servicios de nuestros Servicios. <br><br> Si tiene preguntas o comentarios sobre sus derechos de privacidad, puede enviarnos un correo electrónico a contact.zetaweb@gmail.com. <br><br></p>
+        <h2>10. Controles para funciones de no seguimiento <br><br></h2>
+        <p>La mayoría de los navegadores web y algunos sistemas operativos y aplicaciones móviles incluyen una opción “No rastrear” ("DNT"), función o configuración que puede activar para indicar su preferencia de privacidad para que no se supervisen ni recopilen datos sobre sus actividades de navegación en línea. En esta etapa, no se ha definido un estándar tecnológico uniforme para reconocer e implementar señales DNT. Como tal, actualmente no respondemos a las señales del navegador DNT ni a ningún otro mecanismo que comunique automáticamente su elección de no ser rastreado en línea. Si se adopta un estándar para el seguimiento en línea que debamos seguir en el futuro, se informará sobre esa práctica en una versión revisada de este aviso de privacidad. <br><br> La ley de California nos exige que le informemos cómo respondemos a las señales DNT del navegador web. Debido a que actualmente no existe un estándar industrial o legal para reconocer o responder a señales DNT, no respondemos a ellas en este momento. <br><br></p>
+        <h2>11. Actualizaciones a este aviso <br><br></h2>
+        <p>Zeta se reserva los derechos de cambiar o de modificar estos términos sin previo aviso. La fecha de actualización se indicará al inicio de este aviso de privacidad.<br><br></p>
+        <h2>12. ¿Cómo puede contactarnos sobre este aviso? <br><br></h2>
+        <p>Si tiene inquietudes, dudas, o comentarios sobre este aviso, puede contactarnos por correo electrónico a contact.zetaweb@gmail.com, o al número telefónico +57 3115525069 <br><br></p>
+        <h2>13. ¿Cómo puede revisar, actualizar o eliminar los datos que recopilamos de usted? <br><br></h2>
+        <p>Puede tener derecho a solicitar acceso a la información personal que recopilamos de usted, detalles sobre cómo la hemos procesado, corregir inexactitudes o eliminar su información personal. También puede tener derecho a retirar su consentimiento para que procesemos su información personal. Estos derechos pueden estar limitados en algunas circunstancias por la ley aplicable. Para solicitar revisar, actualizar o eliminar su información personal, por favor contactenos en contact.zetaweb@gmail.com</p>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="footer-about">
+                <p class="footer-title inter-semi-bold">Zeta</p>
+                <p class="footer-text">Somos una agencia ubicada en Colombia que brinda servicios y soluciones digitales para impulsar la presencia y el exito en linea de tu negocio.</p>
+                <div class="social">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="img/instagram.webp" alt="Logo de Instagram"></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="img/facebook.webp" alt="Logo de Facebook"></a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer"><img src="img/x.webp" alt="Logo de X"></a>
+                    <a href="mailto:contact.zetaweb@gmail.com"><img src="img/mail.webp" alt="Icono de correo"></a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div>
+                    <p class="footer-title inter-semi-bold">Navega</p>
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html#servicios">Servicios</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+                <div>
+                    <p class="footer-title inter-semi-bold">Servicios</p>
+                    <a href="webdesign.html">Diseño Web</a>
+                    <a href="seo.html">Optimización SEO</a>
+                    <a href="marketing.html">Marketing Digital</a>
+                    <a href="ecommerce.html">E-Commerce</a>
+                </div>
+                <div>
+                    <p class="footer-title inter-semi-bold">Contacto</p>
+                    <address class="footer-text">
+                        <a href="mailto:contact.zetaweb@gmail.com">contact.zetaweb@gmail.com</a> <br>
+                        <a href="tel:+573115525069">+57 3115525069</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2024 - zetaweb.co</p>
+            <a href="politicas.html"><p style="text-align: right; margin-left: 15px;">Política de Privacidad</p></a>
+        </div>
+    </footer>
+</body>
+</html>
