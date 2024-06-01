@@ -822,7 +822,7 @@ transform: scale(1.08);
 }
 
 .clientes li {
-    background-image: url(check.png);
+    background-image: url(img/check.webp);
     background-repeat: no-repeat;
     background-size: 44px 44px;
     padding-left: 65px;
